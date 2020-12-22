@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/yunfan/workspace/mav_ws/src/fly_with_t265/main_controller/cmake-build-debug/devel/setup.sh
