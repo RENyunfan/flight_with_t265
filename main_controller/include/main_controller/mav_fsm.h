@@ -107,7 +107,7 @@ namespace wtr{
 
             /*  Define the pulisher of point and velocity.  */
             local_pos_pub_ = nh.advertise<geometry_msgs::PoseStamped>
-                    ("mavros/setpoint_position/local", 10);
+                    ("/mavros/setpoint_position/local", 10);
             speed_pub_ = nh.advertise<geometry_msgs::TwistStamped>
                     ("/mavros/setpoint_velocity/cmd_vel", 10);
             /*  Define the subscriber of mocap system or realsense. */
