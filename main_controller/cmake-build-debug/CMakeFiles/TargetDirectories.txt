@@ -75,6 +75,7 @@
 /home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir
 /home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles/mavros_msgs_generate_messages_eus.dir
 /home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir
+/home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles/show_status.dir
 /home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles/roscpp_generate_messages_nodejs.dir
 /home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles/mavros_msgs_generate_messages_py.dir
 /home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/gtest/CMakeFiles/install/strip.dir

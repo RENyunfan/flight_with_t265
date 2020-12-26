@@ -1098,6 +1098,19 @@ mavros_msgs_generate_messages_nodejs/fast:
 .PHONY : mavros_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named show_status
+
+# Build rule for target.
+show_status: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 show_status
+.PHONY : show_status
+
+# fast build rule for target.
+show_status/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/show_status.dir/build.make CMakeFiles/show_status.dir/build
+.PHONY : show_status/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
@@ -1229,6 +1242,33 @@ App/realsenseRemap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_remap.dir/build.make CMakeFiles/rs_remap.dir/App/realsenseRemap.cpp.s
 .PHONY : App/realsenseRemap.cpp.s
 
+App/showStatus.o: App/showStatus.cpp.o
+
+.PHONY : App/showStatus.o
+
+# target to build an object file
+App/showStatus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/show_status.dir/build.make CMakeFiles/show_status.dir/App/showStatus.cpp.o
+.PHONY : App/showStatus.cpp.o
+
+App/showStatus.i: App/showStatus.cpp.i
+
+.PHONY : App/showStatus.i
+
+# target to preprocess a source file
+App/showStatus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/show_status.dir/build.make CMakeFiles/show_status.dir/App/showStatus.cpp.i
+.PHONY : App/showStatus.cpp.i
+
+App/showStatus.s: App/showStatus.cpp.s
+
+.PHONY : App/showStatus.s
+
+# target to generate assembly for a file
+App/showStatus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/show_status.dir/build.make CMakeFiles/show_status.dir/App/showStatus.cpp.s
+.PHONY : App/showStatus.cpp.s
+
 src/mav_fsm.o: src/mav_fsm.cpp.o
 
 .PHONY : src/mav_fsm.o
@@ -1345,12 +1385,16 @@ help:
 	@echo "... gtest_main"
 	@echo "... main_fsm_node"
 	@echo "... rs_remap"
+	@echo "... show_status"
 	@echo "... App/mav_fsm_node.o"
 	@echo "... App/mav_fsm_node.i"
 	@echo "... App/mav_fsm_node.s"
 	@echo "... App/realsenseRemap.o"
 	@echo "... App/realsenseRemap.i"
 	@echo "... App/realsenseRemap.s"
+	@echo "... App/showStatus.o"
+	@echo "... App/showStatus.i"
+	@echo "... App/showStatus.s"
 	@echo "... src/mav_fsm.o"
 	@echo "... src/mav_fsm.i"
 	@echo "... src/mav_fsm.s"

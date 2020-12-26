@@ -48,3 +48,10 @@ add_executable(rs_remap
 target_link_libraries(rs_remap
         ${THIRD_PARTY_LIBS}
         )
+
+
+add_executable(show_status
+        App/showStatus.cpp)
+target_link_libraries(show_status
+        ${THIRD_PARTY_LIBS}
+        )

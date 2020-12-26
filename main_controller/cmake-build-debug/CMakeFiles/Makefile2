@@ -75,6 +75,7 @@ CMAKE_BINARY_DIR = /home/yunfan/Documents/Github/fligh_with_t265/main_controller
 # The main recursive "all" target.
 all: CMakeFiles/main_fsm_node.dir/all
 all: CMakeFiles/rs_remap.dir/all
+all: CMakeFiles/show_status.dir/all
 all: gtest/all
 
 .PHONY : all
@@ -155,6 +156,7 @@ clean: CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
 clean: CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 clean: CMakeFiles/mavros_msgs_generate_messages_eus.dir/clean
 clean: CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/clean
+clean: CMakeFiles/show_status.dir/clean
 clean: CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 clean: CMakeFiles/mavros_msgs_generate_messages_py.dir/clean
 clean: gtest/clean
@@ -2107,6 +2109,33 @@ mavros_msgs_generate_messages_nodejs: CMakeFiles/mavros_msgs_generate_messages_n
 CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/clean
 .PHONY : CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/show_status.dir
+
+# All Build rule for target.
+CMakeFiles/show_status.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/show_status.dir/build.make CMakeFiles/show_status.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/show_status.dir/build.make CMakeFiles/show_status.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target show_status"
+.PHONY : CMakeFiles/show_status.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/show_status.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/show_status.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yunfan/Documents/Github/fligh_with_t265/main_controller/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/show_status.dir/rule
+
+# Convenience name for target.
+show_status: CMakeFiles/show_status.dir/rule
+
+.PHONY : show_status
+
+# clean rule for target.
+CMakeFiles/show_status.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/show_status.dir/build.make CMakeFiles/show_status.dir/clean
+.PHONY : CMakeFiles/show_status.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/roscpp_generate_messages_nodejs.dir
