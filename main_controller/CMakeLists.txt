@@ -38,7 +38,9 @@ catkin_package(
 
 add_executable(main_fsm_node
         App/mav_fsm_node.cpp
-        src/mav_fsm.cpp)
+        src/mav_fsm.cpp
+        src/SO3Control.cpp
+        )
 target_link_libraries(main_fsm_node
         ${THIRD_PARTY_LIBS}
         )

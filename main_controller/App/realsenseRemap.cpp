@@ -13,7 +13,7 @@ void rsCallback(const nav_msgs::Odometry &msg){
 
     pubPose.pose = msg.pose.pose;
     pubPose.header.stamp = ros::Time::now();
-    pubPose.header.frame_id = "base_link";
+    pubPose.header.frame_id = "map";
     remap.publish(pubPose);
 }
 
